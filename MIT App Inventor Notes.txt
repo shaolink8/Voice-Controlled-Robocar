@@ -1,0 +1,20 @@
+MIT App Inventor 
+
+UI : 
+Slider - Like Volume
+Table
+Scrollable
+Media 
+Maps : 
+Feature Collection : Nearby Restaurants etc
+Sensors : 
+Accelerometer :
+Acceleration is calculated on x,y,z axis using some gravity sensors
+Gyroscope : Motion of the phone. Motorola flash 
+Orientation Sensor : 
+Fixate on either landscape or portrait 
+Pedometer : Number of steps 
+Storage : 
+TinyWebDB : Like SQL, database -> FireBaseDB/ CloudDB
+
+Blocks for coding. 

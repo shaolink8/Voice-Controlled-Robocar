@@ -1,0 +1,11 @@
+Connections for AT Mode - 
+Bluetooth Arduino 
+TX-TX
+RX-RX
+GND-GND
+EN-3.3V (Limit for EN)
+
+Slave Mode - AT - To access, attach EN first VCC later
+Master Mode - Restarting VCC after removing EN 
+AT gives you access of the entire thing, you can change name, pw
+Master Mode - Normal
