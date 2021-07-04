@@ -1,23 +1,23 @@
-// MOTOR 1
-int m1 = 11; //Pin for motor 1 clockwise
-int m2 = 12; //Pin for motor 1 anti-clockwise
+// Motor 1
 
-// MOTOR 2
-int m3 = 9 ; //Pin for motor 2 clockwise
-int m4 = 8 ; //Pin for motor 2 anti-clockwise
+int m1 = 11; // Pin for motor 1 clockwise
+int m2 = 12; // Pin for motor 1 anti-clockwise
 
-//-----------  String for storing voice command -----------//
+// Motor 2
 
-String voice ;
+int m3 = 9 ; // Pin for motor 2 clockwise
+int m4 = 8 ; // Pin for motor 2 anti-clockwise
+
+String voice ; // String for storing voice command 
 
 void setup() {
 
     Serial.begin(38400);
 
-    pinMode(m1, OUTPUT); // Right Motor
-    pinMode(m2, OUTPUT); // Right Motor
-    pinMode(m3, OUTPUT); // Left Motor
-    pinMode(m4, OUTPUT); // Left Motor
+    pinMode(m1, OUTPUT); // Right motor
+    pinMode(m2, OUTPUT); // Right motor
+    pinMode(m3, OUTPUT); // Left motor
+    pinMode(m4, OUTPUT); // Left motor
 
 }
 
@@ -37,7 +37,7 @@ void loop() {
       digitalWrite(m2, HIGH);
       digitalWrite(m3, LOW);
       digitalWrite(m4, LOW);
-      delay(5000); // These Delays are allowed to make the BOT to Rotate
+      delay(5000); // These delays are put in place to make the bot rotate
     }
 
     else if (voice == "back"){
@@ -64,7 +64,7 @@ void loop() {
       delay(5000);   
     }
     
-  // To return the motor back to the Original State
+  // To return the motor back to its original state of rest
 
     if(voice.length()>0){
       Serial.println(voice);
